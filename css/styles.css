@@ -54,10 +54,18 @@ body {
   color: var(--white);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
+<<<<<<< HEAD
 figure:hover,
 figure:focus {
   transition: all 0.3s;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+=======
+.figure-shadow {
+  box-shadow: none;
+}
+.figure-shadow:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+>>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
 }
 .button-style-main {
   width: 200px;
@@ -400,10 +408,17 @@ figure:focus {
   margin-right: 10px;
 }
 .links-style:hover .contact-icons {
+<<<<<<< HEAD
   fill: var(--brand-color);
 }
 .links-style:focus .contact-icons {
   fill: var(--brand-color);
+=======
+  fill: var(--brand-color)
+}
+.links-style:focus .contact-icons {
+  fill: var(--brand-color)
+>>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
 }
 .no-margin-topbottom {
   margin-top: 0;
@@ -435,14 +450,22 @@ figure:focus {
   border-radius: 50%;
   cursor: pointer;
   margin-top: 0;
+<<<<<<< HEAD
   margin-bottom: 0;
+=======
+  margin-bottom: 0; 
+>>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
 }
 .social-icon-circle-footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   margin-top: 0;
+<<<<<<< HEAD
   margin-bottom: 0;
+=======
+  margin-bottom: 0; 
+>>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
   background-color: rgb(255, 255, 255, 10%);
   cursor: pointer;
 }
@@ -468,6 +491,7 @@ figure:focus {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03;
+<<<<<<< HEAD
   color: var(--white);
   margin-top: 0;
   margin-bottom: 20px;
@@ -496,3 +520,7 @@ figure:focus {
   text-decoration: none;
   width: 145px;
 }
+=======
+  color: red;
+}
+>>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
