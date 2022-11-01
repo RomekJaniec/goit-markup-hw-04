@@ -6,6 +6,7 @@
   --black: #000000;
   --button-color: #f5f4fa;
   --background-color-main-page: #2f303a;
+  --icon-color: #AFB1B8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -17,8 +18,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background-color: #2f303a;
+  background-image: url(../images/team.png);
+  background-size: cover;
+  width: 1600px;
   height: 600px;
+  margin: 0 auto;
 }
 .section-footer-style {
   background-color: #2f303a;
@@ -27,7 +31,6 @@ body {
 .section-team-style {
   background-color: #f5f4fa;
 }
-/* stylowanie przycisków na stronie Portfolio */
 .button-style {
   height: 38px;
   border: none;
@@ -36,7 +39,6 @@ body {
   cursor: pointer;
   color: ver(--dark-color-font);
 }
-/* stylowanie przycisków na stronie Portfolio */
 .button-font {
   font-family: Roboto;
   font-weight: 500;
@@ -100,14 +102,13 @@ body {
 }
 .main-title-style {
   width: 650px;
-  height: 120px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.16;
+  line-height: 1.37;
   text-align: center;
   letter-spacing: 6%;
   text-transform: uppercase;
@@ -177,7 +178,6 @@ body {
   letter-spacing: 2%;
   padding: 0;
   margin: 0;
-  margin-right: 371px;
   color: var(--dark-color-font);
 }
 .links-footer {
@@ -215,13 +215,13 @@ body {
 .logo-style {
   text-decoration: none;
   width: 145px;
-  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-
 .adress {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.46;
+  line-height: 1.5;
   letter-spacing: 3%;
   margin-top: 0;
   margin-bottom: 0;
@@ -278,50 +278,45 @@ body {
 .list-style-lorem {
   display: flex;
   list-style: none;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  gap: 30px;
+  gap: 40px;
 }
 .list-style-speciality {
   display: flex;
   list-style: none;
-  gap: 30px;
+  justify-content: center;
+  gap: 45px;
   margin-top: 50px;
+  margin-bottom: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 .list-style-ourteam {
   display: flex;
   list-style: none;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 0;
   padding-left: 0;
-  gap: 30px;
+  gap: 40px;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
-  padding: 0 15px;
 }
-.wrapper-header {
+.header-main {
   display: flex;
-  width: 100%;
-  height: 80px;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-/* Pionowe umiejscowienie głównego napisu*/
-.main-title-wrapper {
-  width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  gap: 30px;
+.header-logo-navi {
+  display: flex;
   align-items: center;
-  align-content: center;
-  justify-content: center; */
-  /* padding-top: 200px; */
+  justify-content: space-between;
+  gap: 93px;
 }
 .foto-margins {
   margin: 0 0;
@@ -329,7 +324,6 @@ body {
 .foto-portfolio-margins figure {
   margin: 0 0;
 }
-/* Stylizacja figcaption */
 .foto-description {
   background-color: var(--white);
   text-align: center;
@@ -353,12 +347,39 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-up {
-  padding-top: 94px;
-}
-.section-down {
-  padding-bottom: 94px;
-}
 .head-border {
   border-bottom: 1px solid #e5e5e5;
+}
+.foto-whatwedo {
+  vertical-align: top;
+}
+.no-padding-top {
+  padding-top: 0;
+}
+.lorem-icons {
+  width: 70px;
+  height: 120px;
+  line-height: 0.75;
+}
+.lorem-icons-box {
+  display: block;
+  padding-left: 100px;
+  line-height: 0.75;
+  background-color: var(--button-color);
+}
+.customer-icons {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1bb;
+  border-radius: 5%;
+  fill: var(--icon-color)
+}
+.customers-list {
+  display: flex;
+  gap: 36px;
+  margin-top: 50px;
+}
+.contact-icons {
+  fill: #757575;
+  margin-right: 10px;
 }
