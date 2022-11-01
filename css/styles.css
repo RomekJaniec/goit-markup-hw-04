@@ -53,6 +53,12 @@ body {
   background-color: var(--brand-color);
   transition: background-color 0.5s;
   color: var(--white);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+}
+figure:hover,
+figure:focus {
+  transition: all 0.3s;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
 }
 .button-style-main {
   width: 200px;
@@ -320,6 +326,7 @@ body {
 }
 .foto-margins {
   margin: 0 0;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
 }
 .foto-portfolio-margins figure {
   margin: 0 0;
@@ -374,6 +381,11 @@ body {
   border-radius: 5%;
   fill: var(--icon-color)
 }
+.customer-icons:hover,
+.customer-icons:focus {
+  fill: var(--brand-color);
+  border-color: var(--brand-color);
+}
 .customers-list {
   display: flex;
   gap: 36px;
@@ -382,4 +394,12 @@ body {
 .contact-icons {
   fill: #757575;
   margin-right: 10px;
+}
+.contact-icons:hover,
+.contct-icons:focus {
+  fill: var(--brand-color);
+}
+.no-margin-topbottom {
+margin-top: 0;
+margin-bottom: 0;
 }
