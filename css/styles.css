@@ -6,7 +6,7 @@
   --black: #000000;
   --button-color: #f5f4fa;
   --background-color-main-page: #2f303a;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -19,15 +19,14 @@ body {
   align-items: center;
   gap: 30px;
   background-image: url(../images/team.png);
-  background-size: cover;
+  object-fit: cover;
+  box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
+    inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
   width: 1600px;
   height: 600px;
   margin: 0 auto;
 }
-.section-footer-style {
-  background-color: #2f303a;
-  height: 252px;
-}
+
 .section-team-style {
   background-color: #f5f4fa;
 }
@@ -53,12 +52,12 @@ body {
   background-color: var(--brand-color);
   transition: background-color 0.5s;
   color: var(--white);
-  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 figure:hover,
 figure:focus {
   transition: all 0.3s;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .button-style-main {
   width: 200px;
@@ -195,13 +194,16 @@ figure:focus {
   padding-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
-.links-style-nav:hover {
+.links-style-nav:hover,
+.links-style-nav:focus {
   color: var(--brand-color);
 }
-.links-style:hover {
+.links-style:hover,
+.links-style:focus {
   color: var(--brand-color);
 }
-.links-style-footer:hover {
+.links-style-footer:hover,
+.links-style-footer:focus {
   color: var(--brand-color);
 }
 .links-style {
@@ -229,8 +231,8 @@ figure:focus {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 3%;
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 20px;
   padding-bottom: 9px;
   color: var(--white);
   text-decoration: none;
@@ -326,7 +328,7 @@ figure:focus {
 }
 .foto-margins {
   margin: 0 0;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 .foto-portfolio-margins figure {
   margin: 0 0;
@@ -349,6 +351,7 @@ figure:focus {
 .logo-footer-position {
   padding-top: 60px;
   padding-bottom: 20px;
+  margin-right: 70px;
 }
 .section {
   padding-top: 94px;
@@ -379,7 +382,8 @@ figure:focus {
   height: 92px;
   border: 1px solid #afb1bb;
   border-radius: 5%;
-  fill: var(--icon-color)
+  fill: var(--icon-color);
+  cursor: pointer;
 }
 .customer-icons:hover,
 .customer-icons:focus {
@@ -395,11 +399,100 @@ figure:focus {
   fill: #757575;
   margin-right: 10px;
 }
-.contact-icons:hover,
-.contct-icons:focus {
+.links-style:hover .contact-icons {
+  fill: var(--brand-color);
+}
+.links-style:focus .contact-icons {
   fill: var(--brand-color);
 }
 .no-margin-topbottom {
-margin-top: 0;
-margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.social-icons {
+  display: block;
+  margin-top: 12px;
+  margin-left: 12px;
+  fill: var(--icon-color);
+  cursor: pointer;
+}
+.social-icons-footer {
+  display: block;
+  margin-top: 12px;
+  margin-left: 12px;
+  fill: var(--white);
+  cursor: pointer;
+}
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+.social-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.social-icon-circle-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255, 10%);
+  cursor: pointer;
+}
+.social-icon-circle:hover .social-icons {
+  fill: var(--white);
+}
+.social-icon-circle:focus .social-icons {
+  fill: var(--white);
+}
+.social-icon-circle:hover {
+  background-color: var(--brand-color);
+}
+.social-icon-circle:focus {
+  background-color: var(--brand-color);
+}
+.social-icon-circle-footer:hover,
+.social-icon-circle-footer:focus {
+  background-color: var(--brand-color);
+}
+.join-us {
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03;
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.list-social-footer {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 10px;
+}
+.footer-right-side {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  margin-left: 0;
+}
+.section-footer-style {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #2f303a;
+  height: 252px;
+}
+.logo-style-footer {
+  text-decoration: none;
+  width: 145px;
 }
