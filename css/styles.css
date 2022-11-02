@@ -406,6 +406,15 @@ body {
 .links-style:focus .contact-icons {
   fill: var(--brand-color);
 }
+.links-style:focus .contact-icons {
+  fill: var(--brand-color);
+=======
+  fill: var(--brand-color)
+}
+.links-style:focus .contact-icons {
+  fill: var(--brand-color)
+>>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
+}
 .no-margin-topbottom {
   margin-top: 0;
   margin-bottom: 0;
