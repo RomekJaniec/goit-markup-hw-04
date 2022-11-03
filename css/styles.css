@@ -54,7 +54,7 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .figure-shadow {
-  box-shadow: none,
+  box-shadow: none;
 }
 .figure-shadow:hover,
 .figure-shadow:focus {
@@ -367,19 +367,21 @@ body {
   padding-top: 0;
 }
 .lorem-icons {
+  margin: 0 auto;
+  display: block;
   width: 70px;
   height: 120px;
   line-height: 0.75;
 }
 .lorem-icons-box {
-  display: block;
-  padding-left: 100px;
+  /* display: block; */
   line-height: 0.75;
   background-color: var(--button-color);
 }
 .customer-icons {
-  width: 170px;
+  width: 175px;
   height: 92px;
+
   border: 1px solid #afb1bb;
   border-radius: 5%;
   fill: var(--icon-color);
@@ -392,10 +394,16 @@ body {
 }
 .customers-list {
   display: flex;
-  gap: 36px;
+  gap: 30px;
   margin-top: 50px;
 }
-.contact-icons {
+.contact-icons-mail {
+  vertical-align: bottom;
+  fill: #757575;
+  margin-right: 10px;
+}
+.contact-icons-phone {
+  vertical-align: text-bottom;
   fill: #757575;
   margin-right: 10px;
 }
@@ -407,12 +415,11 @@ body {
 }
 .links-style:focus .contact-icons {
   fill: var(--brand-color);
-=======
-  fill: var(--brand-color)
+
+  fill: var(--brand-color);
 }
 .links-style:focus .contact-icons {
-  fill: var(--brand-color)
->>>>>>> 9a7254f44dce697c36196190ca409d0d037d8197
+  fill: var(--brand-color);
 }
 .no-margin-topbottom {
   margin-top: 0;
