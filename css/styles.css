@@ -407,18 +407,16 @@ body {
   fill: #757575;
   margin-right: 10px;
 }
-.links-style:hover .contact-icons {
+.links-style:hover .contact-icons-mail {
   fill: var(--brand-color);
 }
-.links-style:focus .contact-icons {
+.links-style:focus .contact-icons-mail {
   fill: var(--brand-color);
 }
-.links-style:focus .contact-icons {
-  fill: var(--brand-color);
-
+.links-style:hover .contact-icons-phone {
   fill: var(--brand-color);
 }
-.links-style:focus .contact-icons {
+.links-style:focus .contact-icons-phone {
   fill: var(--brand-color);
 }
 .no-margin-topbottom {
